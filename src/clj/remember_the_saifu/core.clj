@@ -42,10 +42,10 @@
     [:audio#voice-saifu
      [:source {:src "mp3/saifu.mp3" :type "audio/x-mp3"}]]
     [:div#app.full]
-    (include-js "react/react.js"
+    (include-js "react/react.min.js"
                 (str "https://maps.googleapis.com/maps/api/js?key=" api-key)
-                "js/main.js")
-    (javascript-tag "goog.require('remember-the-saifu.core');")]))
+                "js/main.min.js")
+    #_(javascript-tag "goog.require('remember-the-saifu.core');")]))
 
 (defroutes main-routes
   (GET "/" [] (index))
@@ -65,6 +65,7 @@
                   (Imgproc/compareHist hist-model hist-scene Imgproc/CV_COMP_CORREL)
                   "}")}))
   (GET "/react/react.js" [] (response/resource-response "react/react.js"))
+  (GET "/react/react.min.js" [] (response/resource-response "react/react.min.js"))
   (GET "/saifu.css" [] {:content-type "text/css"
                         :body (saifu-css)})
   (route/resources "/"))
