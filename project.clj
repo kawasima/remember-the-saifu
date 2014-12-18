@@ -9,7 +9,8 @@
                  [prismatic/om-tools "0.3.6"]
                  [garden "1.2.5"]
                  [om "0.7.3"]
-                 [opencv "2.4.10"]]
+                 ;[opencv "2.4.10"]
+                ]
   :jvm-opts ["-Djava.library.path=/usr/local/share/OpenCV/java"]
   :source-paths ["src/clj"]
   :plugins [[lein-ring "0.8.13"]
@@ -20,4 +21,6 @@
                [{:id "dev"
                  :source-paths ["src/cljs"]
                  :compiler {:output-to "resources/public/js/main.js"
-                            :optimizations :simple}}]})
+                            :optimizations :simple}}]}
+  :profiles {:production {:jvm-opts ["-Djava.library.path=/usr/lib/jni"]
+                          :dependencies [[opencv "2.4.8"]]}})
