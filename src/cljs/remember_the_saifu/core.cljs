@@ -83,7 +83,6 @@
              form))))
 
 (defn register-saifu [e owner]
-  (.. (.getElementById js/document "voice-saifu") play)
   (let [reader (js/FileReader.)
         file (-> js/document
                  (.getElementById "saifu-image")
@@ -159,14 +158,15 @@
         (om/build register-saifu-view app)])))
   (did-update
    [_ _ _]
-   (.. (.getElementById js/document "voice-saifu") play)))
+   (when-not (= (:have-saifu @app) :ok)
+     (.. (.getElementById js/document "voice-saifu") play))))
 
 (.. js/navigator -geolocation
     (getCurrentPosition
      (fn [position]
        (om/root main-view
                 {:geolocation? (. js/navigator -geolocation)
-                 :outside? true
+                 :outside? false
                  :center-position (google.maps.LatLng. (.. position -coords -latitude)
                                                        (.. position -coords -longitude))}
                 {:target (.getElementById js/document "app")}))))

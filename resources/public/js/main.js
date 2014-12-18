@@ -37003,8 +37003,8 @@ remember_the_saifu.core.update_position = function(a, b) {
     return cljs.core.async.put_BANG_.call(null, a, c);
   });
 };
-var ufv___31286 = schema.utils.use_fn_validation, output_schema31180_31287 = schema.core.Any, input_schema31181_31288 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker31182_31289 = schema.core.checker.call(null, input_schema31181_31288), 
-output_checker31183_31290 = schema.core.checker.call(null, output_schema31180_31287);
+var ufv___31823 = schema.utils.use_fn_validation, output_schema31717_31824 = schema.core.Any, input_schema31718_31825 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker31719_31826 = schema.core.checker.call(null, input_schema31718_31825), 
+output_checker31720_31827 = schema.core.checker.call(null, output_schema31717_31824);
 remember_the_saifu.core.map_view = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -37016,30 +37016,30 @@ remember_the_saifu.core.map_view = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof remember_the_saifu.core.t31236 && (remember_the_saifu.core.t31236 = function(a, b, c, d, e, f, h, k, l, m, n, L) {
+        return "undefined" === typeof remember_the_saifu.core.t31773 && (remember_the_saifu.core.t31773 = function(a, b, c, d, e, f, h, k, l, m, n, L) {
           this.owner = a;
-          this.output_checker31183 = b;
-          this.map_view = c;
-          this.G__31184 = d;
-          this.validate__6069__auto__ = e;
-          this.input_checker31182 = f;
-          this.G__31185 = h;
-          this.input_schema31181 = k;
-          this.output_schema31180 = l;
+          this.map_view = b;
+          this.output_checker31720 = c;
+          this.output_schema31717 = d;
+          this.G__31722 = e;
+          this.input_checker31719 = f;
+          this.validate__6069__auto__ = h;
+          this.input_schema31718 = k;
+          this.G__31721 = l;
           this.app = m;
           this.ufv__ = n;
-          this.meta31237 = L;
+          this.meta31774 = L;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, remember_the_saifu.core.t31236.cljs$lang$type = !0, remember_the_saifu.core.t31236.cljs$lang$ctorStr = "remember-the-saifu.core/t31236", remember_the_saifu.core.t31236.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }, remember_the_saifu.core.t31773.cljs$lang$type = !0, remember_the_saifu.core.t31773.cljs$lang$ctorStr = "remember-the-saifu.core/t31773", remember_the_saifu.core.t31773.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "remember-the-saifu.core/t31236");
+            return cljs.core._write.call(null, b, "remember-the-saifu.core/t31773");
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31236.prototype.om$core$IDisplayName$ = !0, remember_the_saifu.core.t31236.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31773.prototype.om$core$IDisplayName$ = !0, remember_the_saifu.core.t31773.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "map-view";
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31236.prototype.om$core$IDidMount$ = !0, remember_the_saifu.core.t31236.prototype.om$core$IDidMount$did_mount$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31773.prototype.om$core$IDidMount$ = !0, remember_the_saifu.core.t31773.prototype.om$core$IDidMount$did_mount$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
             h = document.getElementById("map-canvas");
@@ -37132,8 +37132,8 @@ remember_the_saifu.core.map_view = function(a, b, c, d, e) {
                               };
                             }(B, H, w, w, x, y, D, z, H, B, C, t, a, b, c, d, e, f, h, l, m, n, p, q, r);
                           }(), u = goog.events.listen(B, goog.Timer.TICK, u);
-                          s[8] = C;
-                          s[9] = u;
+                          s[8] = u;
+                          s[9] = C;
                           s[2] = null;
                           s[1] = 3;
                           return new cljs.core.Keyword(null, "recur", "recur", -437573268);
@@ -37157,23 +37157,23 @@ remember_the_saifu.core.map_view = function(a, b, c, d, e) {
             }
             return null;
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31236.prototype.om$core$IRender$ = !0, remember_the_saifu.core.t31236.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31773.prototype.om$core$IRender$ = !0, remember_the_saifu.core.t31773.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return cljs.core.truth_((new cljs.core.Keyword(null, "geolocation?", "geolocation?", -1121238501)).cljs$core$IFn$_invoke$arity$1(this.app)) ? React.DOM.div({className:"full", id:"map-canvas"}) : React.DOM.div(null, "GeoLocation isn't available.");
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31236.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31773.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta31237;
+            return this.meta31774;
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31236.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31773.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new remember_the_saifu.core.t31236(this.owner, this.output_checker31183, this.map_view, this.G__31184, this.validate__6069__auto__, this.input_checker31182, this.G__31185, this.input_schema31181, this.output_schema31180, this.app, this.ufv__, b);
+            return new remember_the_saifu.core.t31773(this.owner, this.map_view, this.output_checker31720, this.output_schema31717, this.G__31722, this.input_checker31719, this.validate__6069__auto__, this.input_schema31718, this.G__31721, this.app, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.__GT_t31236 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.__GT_t31773 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new remember_the_saifu.core.t31236(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new remember_the_saifu.core.t31773(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new remember_the_saifu.core.t31236(k, e, f, h, l, d, k, c, b, h, a, null);
+        }(l, a, b, c, d, e)), new remember_the_saifu.core.t31773(k, f, e, b, k, d, l, c, h, h, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -37181,8 +37181,8 @@ remember_the_saifu.core.map_view = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___31286, output_schema31180_31287, input_schema31181_31288, input_checker31182_31289, output_checker31183_31290);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, remember_the_saifu.core.map_view), schema.core.make_fn_schema.call(null, output_schema31180_31287, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema31181_31288], null)));
+}(ufv___31823, output_schema31717_31824, input_schema31718_31825, input_checker31719_31826, output_checker31720_31827);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, remember_the_saifu.core.map_view), schema.core.make_fn_schema.call(null, output_schema31717_31824, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema31718_31825], null)));
 remember_the_saifu.core.__GT_map_view = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, remember_the_saifu.core.map_view, a);
@@ -37214,7 +37214,6 @@ remember_the_saifu.core.upload_saifu = function(a, b, c) {
   return a.send("upload_saifu", "post", d);
 };
 remember_the_saifu.core.register_saifu = function(a, b) {
-  document.getElementById("voice-saifu").play();
   var c = new FileReader, d = document.getElementById("saifu-image").files[0];
   c.onload = function(a, c) {
     return function(a) {
@@ -37224,8 +37223,8 @@ remember_the_saifu.core.register_saifu = function(a, b) {
   c.readAsDataURL(d);
   return om.core.set_state_BANG_.call(null, b, new cljs.core.Keyword(null, "saifu-image-file", "saifu-image-file", 811019774), d);
 };
-var ufv___31324 = schema.utils.use_fn_validation, output_schema31306_31325 = schema.core.Any, input_schema31307_31326 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker31308_31327 = schema.core.checker.call(null, input_schema31307_31326), 
-output_checker31309_31328 = schema.core.checker.call(null, output_schema31306_31325);
+var ufv___31861 = schema.utils.use_fn_validation, output_schema31843_31862 = schema.core.Any, input_schema31844_31863 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker31845_31864 = schema.core.checker.call(null, input_schema31844_31863), 
+output_checker31846_31865 = schema.core.checker.call(null, output_schema31843_31862);
 remember_the_saifu.core.register_saifu_view = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -37237,30 +37236,30 @@ remember_the_saifu.core.register_saifu_view = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof remember_the_saifu.core.t31318 && (remember_the_saifu.core.t31318 = function(a, b, c, d, e, f, h, k, l, m, n, L) {
-          this.G__31311 = a;
-          this.owner = b;
-          this.input_schema31307 = c;
-          this.G__31310 = d;
-          this.input_checker31308 = e;
-          this.register_saifu_view = f;
-          this.validate__6069__auto__ = h;
-          this.output_schema31306 = k;
-          this.app = l;
-          this.output_checker31309 = m;
-          this.ufv__ = n;
-          this.meta31319 = L;
+        return "undefined" === typeof remember_the_saifu.core.t31855 && (remember_the_saifu.core.t31855 = function(a, b, c, d, e, f, h, k, l, m, n, L) {
+          this.owner = a;
+          this.output_schema31843 = b;
+          this.G__31847 = c;
+          this.input_checker31845 = d;
+          this.register_saifu_view = e;
+          this.validate__6069__auto__ = f;
+          this.G__31848 = h;
+          this.app = k;
+          this.ufv__ = l;
+          this.input_schema31844 = m;
+          this.output_checker31846 = n;
+          this.meta31856 = L;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, remember_the_saifu.core.t31318.cljs$lang$type = !0, remember_the_saifu.core.t31318.cljs$lang$ctorStr = "remember-the-saifu.core/t31318", remember_the_saifu.core.t31318.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }, remember_the_saifu.core.t31855.cljs$lang$type = !0, remember_the_saifu.core.t31855.cljs$lang$ctorStr = "remember-the-saifu.core/t31855", remember_the_saifu.core.t31855.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "remember-the-saifu.core/t31318");
+            return cljs.core._write.call(null, b, "remember-the-saifu.core/t31855");
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31318.prototype.om$core$IDisplayName$ = !0, remember_the_saifu.core.t31318.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31855.prototype.om$core$IDisplayName$ = !0, remember_the_saifu.core.t31855.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "register-saifu-view";
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31318.prototype.om$core$IDidUpdate$ = !0, remember_the_saifu.core.t31318.prototype.om$core$IDidUpdate$did_update$arity$3 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31855.prototype.om$core$IDidUpdate$ = !0, remember_the_saifu.core.t31855.prototype.om$core$IDidUpdate$did_update$arity$3 = function(a, b, c, d, e, f) {
           return function(h, k, l) {
             h = om.core.get_state.call(null, this.owner, new cljs.core.Keyword(null, "img", "img", 1442687358));
             if (cljs.core.truth_(h)) {
@@ -37276,7 +37275,7 @@ remember_the_saifu.core.register_saifu_view = function(a, b, c, d, e) {
             }
             return null;
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31318.prototype.om$core$IRenderState$ = !0, remember_the_saifu.core.t31318.prototype.om$core$IRenderState$render_state$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31855.prototype.om$core$IRenderState$ = !0, remember_the_saifu.core.t31855.prototype.om$core$IRenderState$render_state$arity$2 = function(a, b, c, d, e, f) {
           return function(h, k) {
             var l = this, m = cljs.core.seq_QMARK_.call(null, k) ? cljs.core.apply.call(null, cljs.core.hash_map, k) : k, n = cljs.core.get.call(null, m, new cljs.core.Keyword(null, "saifu-image-file", "saifu-image-file", 811019774)), L = cljs.core.get.call(null, m, new cljs.core.Keyword(null, "img", "img", 1442687358)), m = cljs.core.truth_(L) ? new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.ui.grid", "div.ui.grid", 271546981), 
             new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div.sixteen.wide.column.center", "div.sixteen.wide.column.center", 1908965781), new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "canvas#saifu-canvas", "canvas#saifu-canvas", 1493300882)], null)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, 
@@ -37301,19 +37300,19 @@ remember_the_saifu.core.register_saifu_view = function(a, b, c, d, e) {
             return cljs.core.apply.call(null, React.DOM.div, cljs.core.map_QMARK_.call(null, m) ? sablono.interpreter.attributes.call(null, sablono.util.merge_with_class.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["ui", "raised", "segment"], null)], null), m)) : {className:"ui raised segment"}, cljs.core.remove.call(null, cljs.core.nil_QMARK_, cljs.core.map_QMARK_.call(null, 
             m) ? cljs.core.PersistentVector.EMPTY : new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [sablono.interpreter.interpret.call(null, m)], null)));
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31318.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31855.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta31319;
+            return this.meta31856;
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31318.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31855.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new remember_the_saifu.core.t31318(this.G__31311, this.owner, this.input_schema31307, this.G__31310, this.input_checker31308, this.register_saifu_view, this.validate__6069__auto__, this.output_schema31306, this.app, this.output_checker31309, this.ufv__, b);
+            return new remember_the_saifu.core.t31855(this.owner, this.output_schema31843, this.G__31847, this.input_checker31845, this.register_saifu_view, this.validate__6069__auto__, this.G__31848, this.app, this.ufv__, this.input_schema31844, this.output_checker31846, b);
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.__GT_t31318 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.__GT_t31855 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new remember_the_saifu.core.t31318(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new remember_the_saifu.core.t31855(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new remember_the_saifu.core.t31318(k, k, c, h, d, f, l, b, h, e, a, null);
+        }(l, a, b, c, d, e)), new remember_the_saifu.core.t31855(k, b, h, d, f, l, k, h, a, c, e, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -37321,8 +37320,8 @@ remember_the_saifu.core.register_saifu_view = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___31324, output_schema31306_31325, input_schema31307_31326, input_checker31308_31327, output_checker31309_31328);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, remember_the_saifu.core.register_saifu_view), schema.core.make_fn_schema.call(null, output_schema31306_31325, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema31307_31326], null)));
+}(ufv___31861, output_schema31843_31862, input_schema31844_31863, input_checker31845_31864, output_checker31846_31865);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, remember_the_saifu.core.register_saifu_view), schema.core.make_fn_schema.call(null, output_schema31843_31862, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema31844_31863], null)));
 remember_the_saifu.core.__GT_register_saifu_view = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, remember_the_saifu.core.register_saifu_view, a);
@@ -37341,8 +37340,8 @@ remember_the_saifu.core.__GT_register_saifu_view = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___31348 = schema.utils.use_fn_validation, output_schema31336_31349 = schema.core.Any, input_schema31337_31350 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker31338_31351 = schema.core.checker.call(null, input_schema31337_31350), 
-output_checker31339_31352 = schema.core.checker.call(null, output_schema31336_31349);
+var ufv___31885 = schema.utils.use_fn_validation, output_schema31873_31886 = schema.core.Any, input_schema31874_31887 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker31875_31888 = schema.core.checker.call(null, input_schema31874_31887), 
+output_checker31876_31889 = schema.core.checker.call(null, output_schema31873_31886);
 remember_the_saifu.core.main_view = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -37354,34 +37353,34 @@ remember_the_saifu.core.main_view = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof remember_the_saifu.core.t31345 && (remember_the_saifu.core.t31345 = function(a, b, c, d, e, f, h, k, l, m, n, L) {
+        return "undefined" === typeof remember_the_saifu.core.t31882 && (remember_the_saifu.core.t31882 = function(a, b, c, d, e, f, h, k, l, m, n, L) {
           this.main_view = a;
           this.owner = b;
-          this.output_checker31339 = c;
-          this.G__31341 = d;
-          this.G__31340 = e;
-          this.input_checker31338 = f;
-          this.output_schema31336 = h;
-          this.validate__6069__auto__ = k;
-          this.input_schema31337 = l;
+          this.output_schema31873 = c;
+          this.output_checker31876 = d;
+          this.G__31877 = e;
+          this.validate__6069__auto__ = f;
+          this.input_checker31875 = h;
+          this.G__31878 = k;
+          this.input_schema31874 = l;
           this.app = m;
           this.ufv__ = n;
-          this.meta31346 = L;
+          this.meta31883 = L;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, remember_the_saifu.core.t31345.cljs$lang$type = !0, remember_the_saifu.core.t31345.cljs$lang$ctorStr = "remember-the-saifu.core/t31345", remember_the_saifu.core.t31345.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }, remember_the_saifu.core.t31882.cljs$lang$type = !0, remember_the_saifu.core.t31882.cljs$lang$ctorStr = "remember-the-saifu.core/t31882", remember_the_saifu.core.t31882.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "remember-the-saifu.core/t31345");
+            return cljs.core._write.call(null, b, "remember-the-saifu.core/t31882");
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31345.prototype.om$core$IDisplayName$ = !0, remember_the_saifu.core.t31345.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31882.prototype.om$core$IDisplayName$ = !0, remember_the_saifu.core.t31882.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "main-view";
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31345.prototype.om$core$IDidUpdate$ = !0, remember_the_saifu.core.t31345.prototype.om$core$IDidUpdate$did_update$arity$3 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31882.prototype.om$core$IDidUpdate$ = !0, remember_the_saifu.core.t31882.prototype.om$core$IDidUpdate$did_update$arity$3 = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return document.getElementById("voice-saifu").play();
+            return cljs.core._EQ_.call(null, (new cljs.core.Keyword(null, "have-saifu", "have-saifu", -2122423760)).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null, this.app)), new cljs.core.Keyword(null, "ok", "ok", 967785236)) ? null : document.getElementById("voice-saifu").play();
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31345.prototype.om$core$IRender$ = !0, remember_the_saifu.core.t31345.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31882.prototype.om$core$IRender$ = !0, remember_the_saifu.core.t31882.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this, l = this;
             return sablono.interpreter.interpret.call(null, function() {
@@ -37401,19 +37400,19 @@ remember_the_saifu.core.main_view = function(a, b, c, d, e) {
               }(h, h, l, a, b, c, d, e, f)], null)], null)], null)], null)], null)], null) : null], null) : new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div#splash.padding", "div#splash.padding", -225423888), om.core.build.call(null, remember_the_saifu.core.register_saifu_view, k.app)], null);
             }());
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31345.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31882.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta31346;
+            return this.meta31883;
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.t31345.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.t31882.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new remember_the_saifu.core.t31345(this.main_view, this.owner, this.output_checker31339, this.G__31341, this.G__31340, this.input_checker31338, this.output_schema31336, this.validate__6069__auto__, this.input_schema31337, this.app, this.ufv__, b);
+            return new remember_the_saifu.core.t31882(this.main_view, this.owner, this.output_schema31873, this.output_checker31876, this.G__31877, this.validate__6069__auto__, this.input_checker31875, this.G__31878, this.input_schema31874, this.app, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), remember_the_saifu.core.__GT_t31345 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), remember_the_saifu.core.__GT_t31882 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new remember_the_saifu.core.t31345(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new remember_the_saifu.core.t31882(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new remember_the_saifu.core.t31345(f, k, e, k, h, d, b, l, c, h, a, null);
+        }(l, a, b, c, d, e)), new remember_the_saifu.core.t31882(f, k, b, e, h, l, d, k, c, h, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -37421,8 +37420,8 @@ remember_the_saifu.core.main_view = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___31348, output_schema31336_31349, input_schema31337_31350, input_checker31338_31351, output_checker31339_31352);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, remember_the_saifu.core.main_view), schema.core.make_fn_schema.call(null, output_schema31336_31349, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema31337_31350], null)));
+}(ufv___31885, output_schema31873_31886, input_schema31874_31887, input_checker31875_31888, output_checker31876_31889);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, remember_the_saifu.core.main_view), schema.core.make_fn_schema.call(null, output_schema31873_31886, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema31874_31887], null)));
 remember_the_saifu.core.__GT_main_view = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, remember_the_saifu.core.main_view, a);
@@ -37442,6 +37441,6 @@ remember_the_saifu.core.__GT_main_view = function() {
   return a;
 }();
 navigator.geolocation.getCurrentPosition(function(a) {
-  return om.core.root.call(null, remember_the_saifu.core.main_view, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "geolocation?", "geolocation?", -1121238501), navigator.geolocation, new cljs.core.Keyword(null, "outside?", "outside?", -1930213908), !0, new cljs.core.Keyword(null, "center-position", "center-position", -1139175181), new google.maps.LatLng(a.coords.latitude, a.coords.longitude)], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "target", 
+  return om.core.root.call(null, remember_the_saifu.core.main_view, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "geolocation?", "geolocation?", -1121238501), navigator.geolocation, new cljs.core.Keyword(null, "outside?", "outside?", -1930213908), !1, new cljs.core.Keyword(null, "center-position", "center-position", -1139175181), new google.maps.LatLng(a.coords.latitude, a.coords.longitude)], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "target", 
   "target", 253001721), document.getElementById("app")], null));
 });
